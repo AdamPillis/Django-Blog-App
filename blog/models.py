@@ -21,7 +21,7 @@ class Post(models.Model):
 
     class Meta:
         """X"""
-        ordering = ['created_on']
+        ordering = ['-created_on']
 
     def __str__(self):
         return self.title

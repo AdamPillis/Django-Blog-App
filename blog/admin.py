@@ -22,4 +22,5 @@ class CommentAdmin(admin.ModelAdmin):
     actions = ['approve_comments']
 
     def approve_comments(self, request, queryset):
+        """X"""
         queryset.update(approved=True)
